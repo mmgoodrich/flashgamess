@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="navbar"></div>
+<h1>Games that still work after 2020</h1>
+<p>(This list is incomplete, more games will be checked and added to this list.)</p>
+
+
+
+
+
+    <script src="/ads.js" type="text/javascript"></script>
+<script type="text/javascript">
+$("#navbar").load("nav_bar.html"); 
+$("#ruffle_inject_div").load("ruffle.html"); 
+if(document.getElementById('QUNhOsBGePir')){
+//no adblockers detected
+} else { 
+$("#popup").load("https://flashmath1.github.io/popup/popup.html");
+}
+</script>
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript"charset="utf-8">
+  d3.text("working_games.csv", function(data) {
+      var parsedCSV = d3.csv.parseRows(data);
+
+      var container = d3.select("body")
+          .append("table")
+
+          .selectAll("tr")
+              .data(parsedCSV).enter()
+              .append("tr")
+
+          .selectAll("td")
+              .data(function(d) { return d; }).enter()
+              .append("td")
+              .text(function(d) { return d; });
+  });
+</script>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  background: #333;
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  margin: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+th {
+  border-bottom: 1px solid #364043;
+  color: #E2B842;
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+td {
+  color: #fff;
+  font-weight: 400;
+  padding: 0.65em 1em;
+}
+.disabled td {
+  color: #4F5F64;
+}
+tbody tr {
+  transition: background 0.25s ease;
+}
+tbody tr:hover {
+  background: #014055;
+}
+
+
+</style>
+
+</body>
+</html>
